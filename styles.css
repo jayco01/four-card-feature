@@ -88,6 +88,11 @@ textarea:not([rows]) {
     --clr-dark-grey: hsl(234, 12%, 34%);
     --clr-light-grey: hsl(212, 6%, 44%);
     --clr-white: hsl(0, 0%, 100%);
+    --clr-off-white: #fafafa;
+}
+
+body {
+    background-color: var(--clr-off-white);
 }
 
 h1,h2,h3,p {
@@ -105,13 +110,13 @@ h1,h2,h3,p {
 
 .title__thin {
     font-weight: 200;
-    font-size: clamp(1.6rem, 2vw, 2rem);
+    font-size: clamp(1.6rem, 2vw, 2.5rem);
     margin-bottom: clamp(0.4rem,0.5rem,1rem);
 }
 
 .title__bold {
     font-weight: 600;
-    font-size: clamp(1.6rem, 2vw, 2rem);
+    font-size: clamp(1.6rem, 2vw, 2.5rem);
 }
 
 .title__description {
@@ -127,7 +132,7 @@ h1,h2,h3,p {
     +++++++++++++++++++++++++++++*/
 .card {
     background-color: var(--clr-white);
-    max-width: clamp(20rem,21rem,24rem);
+    max-width: clamp(20rem,22rem,90rem);
     border-radius: 0.625rem;
     min-height: 15rem;
     padding: 1rem 2rem;
@@ -202,6 +207,9 @@ h1,h2,h3,p {
         'supervisor karma calculator'
         '. karma .';
         justify-content: center;
-        align-content: center;
+    }
+
+    .title {
+        margin: 2.5rem 0rem;
     }
 }
